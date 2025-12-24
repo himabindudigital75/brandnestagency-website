@@ -1,0 +1,35 @@
+/* ============================================
+   PAMPHLET DESIGN PAGE (EXTRA)
+============================================ */
+
+.pamphlet-hero {
+  padding-top: 140px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.pamphlet-hero img {
+  width: 480px;
+  animation: float 4s infinite ease-in-out;
+}
+
+.pamphlet-grid {
+  margin-top: 80px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(280px,1fr));
+  gap: 25px;
+}
+
+.pamphlet-card {
+  background: #fff;
+  padding: 30px;
+  border-radius: 18px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+  transition: .3s;
+}
+
+.pamphlet-card:hover {
+  background: var(--gold);
+  color: #000;
+}

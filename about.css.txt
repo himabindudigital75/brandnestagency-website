@@ -1,0 +1,9 @@
+/* ABOUT PAGE EXTRA CSS (since layout is already perfect) */
+
+.about-hero {
+  padding-top: 140px;
+}
+
+.image-wrap img {
+  border-radius: 18px;
+}

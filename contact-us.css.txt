@@ -1,0 +1,21 @@
+/* CONTACT PAGE EXTRA CSS */
+
+.contact-wrapper {
+  padding-top: 150px;
+}
+
+.contact-card {
+  background: #fff;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+}
+
+.contact-card input,
+.contact-card textarea {
+  width: 100%;
+  padding: 14px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  margin-bottom: 20px;
+}

@@ -1,0 +1,98 @@
+/* ============================================
+   LOGO DESIGN PAGE — EXTRA PAGE CSS ONLY
+   Uses global header + footer from style.css
+============================================ */
+
+.logo-hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 140px; /* because header is fixed */
+}
+
+.logo-hero .hero-left {
+  width: 50%;
+  padding-right: 40px;
+}
+
+.logo-hero h1 {
+  font-size: 48px;
+  font-weight: 700;
+  color: var(--navy);
+  margin-bottom: 20px;
+}
+
+.logo-hero p {
+  font-size: 17px;
+  line-height: 1.7;
+  color: #333;
+}
+
+.logo-hero img {
+  width: 480px;
+  animation: float 4s infinite ease-in-out;
+}
+
+/* ========= FEATURES SECTION ========= */
+.features {
+  background: #f5f7fb;
+  border-radius: 20px;
+  padding: 80px 60px;
+  margin-top: 80px;
+}
+
+.feature-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 25px;
+}
+
+.feature-card {
+  background: #fff;
+  padding: 30px;
+  border-radius: 18px;
+  text-align: center;
+  box-shadow: 0 12px 20px rgba(0,0,0,0.07);
+  transition: 0.3s;
+}
+
+.feature-card:hover {
+  transform: translateY(-10px);
+}
+
+.feature-card i {
+  color: var(--gold);
+  font-size: 38px;
+  margin-bottom: 15px;
+}
+
+/* ========= SERVICES GRID ========= */
+.service-grid {
+  margin-top: 60px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px,1fr));
+  gap: 30px;
+}
+
+.service-box {
+  background: #fff;
+  border-radius: 18px;
+  padding: 30px;
+  text-align: center;
+  box-shadow: 0 12px 20px rgba(0,0,0,0.07);
+  transition: 0.3s;
+}
+
+.service-box:hover {
+  background: var(--gold);
+  color: #000;
+}
+
+/* ========= LOGO PAGE FAQ ========= */
+.logo-page-faq {
+  margin-top: 80px;
+  background: #fff;
+  padding: 60px;
+  border-radius: 24px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+}

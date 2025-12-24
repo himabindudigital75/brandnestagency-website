@@ -1,0 +1,32 @@
+/* ============================================
+   POSTER DESIGN PAGE — EXTRA CSS
+============================================ */
+
+.poster-hero {
+  padding-top: 140px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.poster-hero img {
+  width: 480px;
+  border-radius: 20px;
+  animation: float 4s infinite ease-in-out;
+}
+
+.poster-showcase {
+  margin-top: 100px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(260px,1fr));
+  gap: 30px;
+}
+
+.poster-item img {
+  border-radius: 20px;
+  transition: .3s;
+}
+
+.poster-item img:hover {
+  transform: scale(1.06);
+}
