@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Brandnest Agency | Blogs</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- SEO Description -->
+  <meta name="description" content="Explore branding, design, marketing, and visual identity insights from Brandnest Agency. Learn about logos, posters, brochures, graphic design trends, and more.">
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+
+  <!-- Main CSS -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<!-- ================= HEADER ================= -->
+<header class="site-header">
+  <div class="nav-container">
+
+    <!-- LOGO -->
+    <div class="logo">
+      <a href="index.html">
+        <img 
+          src="images/logo.png"
+          alt="BrandNest Agency Logo">
+      </a>
+    </div>
+
+    <!-- NAVIGATION -->
+    <nav class="nav-menu">
+      <ul class="main-menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+
+        <!-- SERVICES DROPDOWN -->
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle">Services ▾</a>
+          <ul class="dropdown-menu">
+            <li><a href="logo-design.html">Logo Design</a></li>
+            <li><a href="graphic-design.html">Graphic Design</a></li>
+            <li><a href="poster-design.html">Poster Design</a></li>
+            <li><a href="pamphlet-design.html">Pamphlet Design</a></li>
+          </ul>
+        </li>
+
+        <li><a href="blogs.html" class="active">Blogs</a></li>
+        <li><a href="careers.html">Careers</a></li>
+        <li><a href="faq.html">FAQ's</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </nav>
+
+  </div>
+</header>
+
+<script>
+/* Dropdown Click Logic */
+document.addEventListener("DOMContentLoaded", () => {
+  const dropdown = document.querySelector(".dropdown");
+  const toggle = document.querySelector(".dropdown-toggle");
+
+  toggle.addEventListener("click", (e) => {
+    e.preventDefault();
+    e.stopPropagation();
+    dropdown.classList.toggle("active");
+  });
+
+  document.addEventListener("click", (e) => {
+    if (!dropdown.contains(e.target)) {
+      dropdown.classList.remove("active");
+    }
+  });
+});
+</script>
+
+
+<!-- ================= BLOG PAGE ================= -->
+<section class="blog-page">
+
+  <!-- BLOG 1 -->
+  <div class="blog-section">
+    <div class="blog-text animate">
+      <h2>Why Strong Branding Is the Foundation of Every Successful Business</h2>
+      <p>
+        In today’s competitive digital world, branding is no longer optional—it is essential.
+        Whether you are a startup or an established business, branding shapes customer perception.
+      </p>
+
+      <div class="more-content">
+        <h4>What Is Branding?</h4>
+        <p>
+          Branding is the process of creating a strong identity through visuals, messaging, and tone.
+        </p>
+
+        <h4>Why Branding Matters</h4>
+        <ul>
+          <li>Builds trust and credibility</li>
+          <li>Creates strong brand recognition</li>
+          <li>Improves customer loyalty</li>
+          <li>Enhances marketing impact</li>
+        </ul>
+
+        <p>
+          Brandnest Agency provides professional branding solutions that help brands stand out.
+        </p>
+      </div>
+
+      <button class="see-more">See More</button>
+    </div>
+
+    <div class="blog-image animate">
+      <img src="images/blog1.png" alt="Branding">
+    </div>
+  </div>
+
+  <!-- BLOG 2 -->
+  <div class="blog-section reverse">
+    <div class="blog-text animate">
+      <h2>The Power of Professional Graphic Design in Modern Marketing</h2>
+      <p>
+        Visual communication plays a key role in attracting and converting customers.
+        Professional graphic design gives your brand a competitive edge.
+      </p>
+
+      <div class="more-content">
+        <h4>Why Graphic Design Matters</h4>
+        <p>
+          Graphic design communicates ideas quickly through logos, posters, brochures, and creatives.
+        </p>
+
+        <h4>Benefits</h4>
+        <ul>
+          <li>Creates a strong first impression</li>
+          <li>Builds a consistent brand identity</li>
+          <li>Drives better customer engagement</li>
+          <li>Boosts conversions</li>
+        </ul>
+
+        <p>
+          Brandnest Agency delivers creative designs that perform well across all platforms.
+        </p>
+      </div>
+
+      <button class="see-more">See More</button>
+    </div>
+
+    <div class="blog-image animate">
+      <img src="images/blog2.png" alt="Graphic Design">
+    </div>
+  </div>
+
+  <!-- BLOG 3 -->
+  <div class="blog-section">
+    <div class="blog-text animate">
+      <h2>How a Well-Designed Logo Can Transform Your Brand Identity</h2>
+      <p>
+        A logo is the face of your brand. It represents your values and forms first impressions.
+      </p>
+
+      <div class="more-content">
+        <h4>Key Elements of a Good Logo</h4>
+        <ul>
+          <li>Simplicity</li>
+          <li>Relevance</li>
+          <li>Uniqueness</li>
+          <li>Versatility</li>
+        </ul>
+
+        <p>
+          Our logo design process ensures stunning visual identity backed by strategy.
+        </p>
+      </div>
+
+      <button class="see-more">See More</button>
+    </div>
+
+    <div class="blog-image animate">
+      <img src="images/blog3.png" alt="Logo Design">
+    </div>
+  </div>
+
+  <!-- BLOG 4 -->
+  <div class="blog-section reverse">
+    <div class="blog-text animate">
+      <h2>Why Brochures, Pamphlets & Posters Still Matter in the Digital Age</h2>
+      <p>
+        Even today, print marketing materials remain powerful for local reach and brand impact.
+      </p>
+
+      <div class="more-content">
+        <h4>Why Print Marketing Works</h4>
+        <ul>
+          <li>Strong local audience engagement</li>
+          <li>Professional brand presentation</li>
+          <li>Enhanced offline visibility</li>
+        </ul>
+
+        <p>
+          We design high-quality brochures, pamphlets, and posters to elevate your marketing.
+        </p>
+      </div>
+
+      <button class="see-more">See More</button>
+    </div>
+
+    <div class="blog-image animate">
+      <img src="images/blog4.png" alt="Print Design">
+    </div>
+  </div>
+
+</section>
+
+<!-- ================= SEE MORE BUTTON JS ================= -->
+<script>
+document.querySelectorAll(".see-more").forEach(btn => {
+  btn.addEventListener("click", () => {
+    const more = btn.previousElementSibling;
+    more.style.display = more.style.display === "block" ? "none" : "block";
+    btn.textContent = btn.textContent === "See More" ? "See Less" : "See More";
+  });
+});
+</script>
+
+
+<!-- ================= FOOTER ================= -->
+<footer class="site-footer">
+  <div class="footer-container">
+
+    <div class="footer-left">
+      <h3>BrandNest Agency</h3>
+      <p class="footer-tagline">Creative branding & graphic design solutions.</p>
+
+      <div class="footer-section">
+        <h4>Quick Links</h4>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="contact.html">Contact</a>
+      </div>
+
+      <div class="footer-section">
+        <h4>Connect</h4>
+        <div class="footer-social">
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-right">
+      <a href="#" class="footer-newsletter">Subscribe to our Newsletter</a>
+
+      <p><strong>Address</strong><br>BrandNest Agency,<br>Hyderabad, India</p>
+
+      <p><strong>Email</strong><br>info@brandnestagency.com</p>
+
+      <p><strong>Contact</strong><br>+91 9XXXXXXXXX</p>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    © 2025 BrandNest Agency. All rights reserved.
+  </div>
+</footer>
+
+</body>
+</html>
