@@ -1,0 +1,165 @@
+/* =========================================================
+   GLOBAL STYLE.CSS — BrandNest Agency
+   Applies to ALL pages
+========================================================= */
+
+/* GOOGLE FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap');
+
+/* ROOT COLORS */
+:root {
+  --navy: #071c3f;
+  --gold: #d4af37;
+  --blue: #0a4dbf;
+  --light: #f7f8fc;
+  --dark: #111;
+  --white: #fff;
+}
+
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  line-height: 1.7;
+  color: var(--dark);
+  background: #fff;
+  overflow-x: hidden;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* =========================================================
+   HEADER (Universal)
+========================================================= */
+
+.site-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 9999;
+  background: var(--navy);
+  border-bottom: 1px solid rgba(255,255,255,0.15);
+  box-shadow: 0 4px 20px rgba(0,0,0,0.25);
+}
+
+.nav-container {
+  max-width: 1350px;
+  margin: auto;
+  height: 90px;
+  padding: 12px 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo img {
+  height: 90px;
+  width: auto;
+}
+
+/* NAVIGATION */
+.nav-menu .main-menu {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.nav-menu a {
+  font-size: 15px;
+  font-weight: 500;
+  color: #fff;
+  position: relative;
+}
+
+/* HOVER LINE */
+.nav-menu a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  height: 2px;
+  width: 0;
+  background: var(--gold);
+  transition: 0.3s;
+}
+
+.nav-menu a:hover::after {
+  width: 100%;
+}
+
+/* DROPDOWN */
+.dropdown-menu {
+  list-style: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: var(--navy);
+  min-width: 200px;
+  border-radius: 6px;
+  padding: 12px 0;
+  display: none;
+  flex-direction: column;
+  box-shadow: 0 12px 25px rgba(0,0,0,0.25);
+}
+
+.dropdown:hover .dropdown-menu {
+  display: flex;
+}
+
+.dropdown-menu li {
+  width: 100%;
+}
+
+.dropdown-menu li a {
+  padding: 10px 16px;
+  color: var(--white);
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+.dropdown-menu li a:hover {
+  background: var(--gold);
+  color: #000;
+  padding-left: 25px;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  /* basic responsive tweaks */
+  .nav-container { padding: 12px 18px; }
+  .logo img { height: 60px; }
+}
+
+/* utility classes used across pages */
+.container { max-width: 1200px; margin: 0 auto; padding: 0 18px; }
+.card { background: #fff; border-radius: 12px; padding: 18px; box-shadow: 0 10px 30px rgba(0,0,0,0.06); }
+
+/* small animations */
+@keyframes float { 0%{ transform: translateY(0) } 50%{ transform: translateY(-8px) } 100%{ transform: translateY(0) } }
+
+/* footer */
+.site-footer { background: #f8f9fb; padding: 60px 0 30px; margin-top: 80px; }
+.footer-container { max-width: 1100px; margin: 0 auto; display:flex; gap:40px; }
+.footer-left { flex:1 }
+.footer-right { width:300px }
+
+/* small helpers */
+.left-social-sidebar { position: fixed; left: 18px; top: 50%; transform: translateY(-50%); display:flex; flex-direction:column; gap:12px; z-index:999; }
+.social-icon { display:flex; align-items:center; justify-content:center; width:44px; height:44px; border-radius:50%; background:#fff; box-shadow:0 8px 20px rgba(0,0,0,0.08); color:var(--navy); }
+
+/* end of file */
